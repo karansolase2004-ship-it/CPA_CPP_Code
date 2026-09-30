@@ -1,0 +1,15 @@
+#---------------------------------------------------
+Assume list.cpp list.hpp are in current directory 
+#---------------------------------------------------
+!for static link library or archive file 
+#---------------------------------------------------
+#g++ -c -o list.o list.cpp 
+#ar  <??>
+liblist.a 
+#---------------------------------------------------
+!for shared object file 
+#g++ -fPIC -o list.o list.cpp 
+#g++ --<??> -o listlist.so list.o 
+#---------------------------------------------------
+Advanced C/C++ compiling
+#---------------------------------------------------

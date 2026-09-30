@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "HelloWin.C": "cpp"
+    }
+
+    "includePath": {
+    "${workspaceFolder}/**",
+    "C:/Path/To/graphics/library"
+    }
+}

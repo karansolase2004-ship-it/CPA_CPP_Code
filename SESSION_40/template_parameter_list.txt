@@ -1,0 +1,51 @@
+Template Parameter List 
+template <Param1, Param2, ..., Param n>
+
+Param1 -> template parameter 
+Param2 -> template parameter 
+
+Param n -> template parameter 
+#----------------------------------------------------------------------
+Each template parameter must fall in one of the following categories: 
+1) Non-type parameter 
+2) Type parameter 
+3) template-template parameter 
+#----------------------------------------------------------------------
+Non-type parameter of template: 
+
+template <int_type parameter_name> 
+
+int_type -> short, unsigned short, int, unsinged int, long, unsigned long, 
+            long long, unsigned long long, bool 
+
+template <int N> 
+#------------------------------------
+
+1) function template declaration 
+
+template <int N> 
+void test_function(float x, float y); 
+
+2) function template definition 
+
+template <int N> 
+void test_function(float x, float y){
+    // blah 
+}
+
+3) class template declaration 
+
+template <int N> 
+class Stack; 
+
+4) class template definition 
+
+template <int N> 
+class Stack{
+    // blah 
+}; 
+#-----------------------------------------------------------------
+2) Template type parameter 
+
+template <typename T> 
+

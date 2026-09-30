@@ -1,0 +1,24 @@
+# C/C++ compiled files
+*.exe
+*.obj
+*.o
+*.out
+*.pdb
+*.ilk
+*.idb
+*.lib
+
+# Visual Studio generated files
+.vs/
+x64/
+Debug/
+Release/
+
+# Build logs
+*.tlog
+
+# Archives
+*.zip
+
+*.tmp
+*.log

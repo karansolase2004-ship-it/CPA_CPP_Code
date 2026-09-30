@@ -1,0 +1,31 @@
+class template use kasa karaycha ? 
+specific datatype che vector pahije astil tr kasa karaycha ? 
+non static data definition madhe T ha type nahi milalal tr size nemki kiti laagte te sangta yet nahi mhnuntyope dilya shivay class template aani object nahi banvate yet
+datatype he blueprint aahe tya pasun instantiation kelyvr instance tayar hotat
+generic je saglyaana applicable asta mhnje t ha datatype sarvanna represent karnara aahe
+jasa generic type void
+ eka datatype saathi class template cha instantiation ekdach hota 
+kaaran jr ekhada particular datatype gheun instantiation kela asel tr tr tya instant la tempate id assign kela jaato
+aani jeva jeva tya tya type cha template punha instantiate hoil tr je punha navin template instantiate n karta tya template id nusar already instantiate jhalela template provide kela jaato 
+m = ivec[3] undefined behaviour milel karran ivec[3] la value cha assign kelili nahiyee 
+undefined behaviour yaa arthi ki te behviour C++ la dekhil mahit nasta
+general protection fault, segmentation fault, memory violation fault he samajnyasathi OS chi knowledge laagte
+
+50 class lihayche real world entities vaaprun 
+fashion , electronic product chi link 
+readme.txt
+
+
+vector cha object madhil darva non static data members aani tyanche padding ekatra karun size ha 24 aalay
+
+
+
+
+
+
+
+
+
+
+
+ 

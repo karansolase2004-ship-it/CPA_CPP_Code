@@ -1,0 +1,3 @@
+# cd to_PROJECT_FOLDER
+# cl /EHsc /Fe:app.exe vector.cpp use_vector.cpp 
+# app.exe 

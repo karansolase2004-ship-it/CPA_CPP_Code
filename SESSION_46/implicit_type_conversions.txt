@@ -1,0 +1,61 @@
+
+1) PROMOTIONS 
+char -> short -> int -> long -> long long 
+    |    |           |    |      |
+    |    |           |    |      |
+    v    v           v    v      v
+    --------------> float  -> double 
+
+
+char -> unsigned char -> short -> unsigned short 
+-> int -> unsigned int -> long -> unsigned long -> 
+long long -> unsigned long long 
+
+from char upto unsigned long -> float -> double 
+long long -> unsigned long long -> double 
+
+#---------------------------------------------------
+2) void* ptr_to_void; 
+
+T* ptr_to_T = ptr_to_void; 
+ptr_to_void = ptr_to_T; 
+
+int m; 
+float f; 
+struct Date { int day, month, year }myDate;
+void* ptr_to_void; 
+
+ptr_to_void = &m;   // type(rhs) == int* 
+[ ptr_to_void = (void*)&m]; 
+ptr_to_void = &f;   // type(rhs) == float* 
+[ptr_to_void = (void*)&f;]
+ptr_to_void = &myDate; // type(rhs) == struct Date* 
+[ ptr_to_void = (void*)&myDate;]
+
+
+struct A inA1;
+struct A* pA1 = &inA; 
+
+struct A* pA2;
+
+void* ptr = pA1; 
+pA2 = ptr; 
+
+int main(void){
+    struct A inA; 
+
+    test((void*)&inA); 
+}
+
+// void* ptr = &inA; 
+void test(void* ptr){
+    struct A* pA = (struct A*)ptr; 
+}
+
+in C++ 
+T* ptrT; 
+void* ptr = ptrT; // allowed by C++ (implicit type conversion)
+
+int* ptrN = malloc(sizeof(int)); 
+
+[void* to int* conversion is not allowed]

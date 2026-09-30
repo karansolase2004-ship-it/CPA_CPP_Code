@@ -1,0 +1,29 @@
+/* 
+    Iterator itself is a class! 
+    Iterator object should be considered as 
+    'DE-REFERENSIBLE' 
+
+    *iter_object
+
+    iterator is a class 
+
+    iter is an object of iterator class. 
+
+    iter = R.begin()
+
+    ++iter; 
+    iter++; 
+
+    --iter; 
+    iter--; 
+
+    *iter
+
+    R.end()
+
+    iter = R.begin(); 
+    while(iter != R.end()){
+        std::cout << "*iter = " << *iter << std::endl; 
+        ++iter; 
+    }
+*/
